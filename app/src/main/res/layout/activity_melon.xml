@@ -7,11 +7,23 @@
     android:orientation="vertical"
     tools:context=".MelonActivity">
 
+    <!--text-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="재생 목록"/>
+
     <!--list-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/melon_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
