@@ -69,7 +69,11 @@ class MelonItemRecyclerAdepter(
             thumbnail = itemView.findViewById(R.id.thumbnail)
             play = itemView.findViewById(R.id.play)
 
-
+            play.setOnClickListener {
+                val intent = Intent(context, MelonDetailActivity::class.java)
+                intent.putExtra("melon_item_list", melonItemList as Serializable)
+                context.startActivity(intent)
+            }
         }
     }
 
